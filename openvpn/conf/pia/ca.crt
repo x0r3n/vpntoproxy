@@ -1,35 +1,3 @@
-client
-dev tun0
-proto tcp
-remote 193.37.252.4 443
-resolv-retry infinite
-nobind
-persist-key
-persist-tun
-cipher bf-cbc
-auth sha1
-tls-client
-remote-cert-tls server
-
-auth-user-pass /config/openvpn-credentials.txt
-compress
-verb 1
-reneg-sec 0
-<crl-verify>
------BEGIN X509 CRL-----
-MIIBkzCB/TANBgkqhkiG9w0BAQ0FADCBpTELMAkGA1UEBhMCVVMxCzAJBgNVBAgT
-Ak9IMREwDwYDVQQHEwhDb2x1bWJ1czEgMB4GA1UEChMXUHJpdmF0ZSBJbnRlcm5l
-dCBBY2Nlc3MxIzAhBgNVBAMTGlByaXZhdGUgSW50ZXJuZXQgQWNjZXNzIENBMS8w
-LQYJKoZIhvcNAQkBFiBzZWN1cmVAcHJpdmF0ZWludGVybmV0YWNjZXNzLmNvbRcN
-MTYwNzA4MTkwMDQ2WhcNMzYwNzAzMTkwMDQ2WjAmMBECAQEXDDE2MDcwODE5MDA0
-NjARAgEGFwwxNjA3MDgxOTAwNDYwDQYJKoZIhvcNAQENBQADgYEALc0LlIZ8BbDq
-7nyyS6VSiiYv6gKb1H2IV4neLXkiMcij9VLnLFrsO+RRZMXXcWGeE/WssYYVCugO
-OTCCie8HtNRe5UItO59a8f6mhN/WMbZYGKG7qG7pjrnMI34czbrHl0SOuJhOunoJ
-DAVtqbc8RJNEmepIxJfLXgDaUKoJaJs=
------END X509 CRL-----
-</crl-verify>
-
-<ca>
 -----BEGIN CERTIFICATE-----
 MIID2jCCA0OgAwIBAgIJAOtqMkR2JSXrMA0GCSqGSIb3DQEBBQUAMIGlMQswCQYD
 VQQGEwJVUzELMAkGA1UECBMCT0gxETAPBgNVBAcTCENvbHVtYnVzMSAwHgYDVQQK
@@ -53,6 +21,3 @@ atXgZzjFO6qctQWwV31P4qLelZzYndoZ7olY8ANPxl7jlP3YmbE1RzSnWtID9Gge
 fsKHi1jAS9tNP2E+DCZiWcM/5Y7/XKS/6KvrPQT90nM5klK9LfNvS+kFabMmMBe2
 llQlzAzFiIfabACTQn84QLeLOActKhK8hFJy2Gy6
 -----END CERTIFICATE-----
-</ca>
-
-disable-occ
