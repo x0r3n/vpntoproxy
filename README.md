@@ -21,24 +21,30 @@ Build based on
 * [phusion/baseimage-docker](https://github.com/phusion/baseimage-docker)
 
 It bundles certificates and configurations for the following VPN providers:
-* Anonine
-* BTGuard
-* Cryptostorm
-* FrootVPN
-* FrostVPN
-* HideMe
-* HideMyAss
-* IntegrityVPN
-* IPVanish - UPDATED 2020/04/05
-* Ivacy
-* IVPN
-* NordVPN
-* Private Internet Access (PIA) - UPDATED 2020/04/05
-* PrivateVPN
-* PureVPN - UPDATED 2020/04/05
-* TigerVPN
-* TorGuard
-* UsenetServerVPN
+* anonine
+* btguard
+* cryptostorm
+* froot
+* frostvpn
+* hideme
+* hidemyass
+* integrityvpn
+* ipvanish - 05/04/2020
+* ivacy
+* ivpn
+* newshosting
+* nordvpn - 05/04/2020
+* ovpn
+* pia - 05/04/2020
+* privatevpn
+* purevpn - 05/04/2020
+* slickvpn
+* smartvpn
+* tiger
+* torguard
+* usenetserver
+* vpnht
+* windscribe
 
 ## Run container from Docker registry
 The container is available from the Docker registry and this is the simplest way to get it.
