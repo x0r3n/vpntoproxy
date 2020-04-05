@@ -23,7 +23,7 @@ Build based on
 It bundles certificates and configurations for the following VPN providers:
 * anonine
 * btguard - 05/04/2020
-* cryptostorm
+* cryptostorm - 05/04/2020
 * froot
 * frostvpn
 * hideme
