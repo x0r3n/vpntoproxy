@@ -31,14 +31,14 @@ It bundles certificates and configurations for the following VPN providers:
 * integrityvpn - 05/04/2020
 * ipvanish - 05/04/2020
 * ivacy - 05/04/2020
-* ivpn
+* ivpn - 05/04/2020
 * newshosting
 * nordvpn - 05/04/2020
-* ovpn
+* ovpn - 05/04/2020
 * pia - 05/04/2020
-* privatevpn
+* privatevpn - 05/04/2020
 * purevpn - 05/04/2020
-* slickvpn
+* slickvpn - 05/04/2020
 * smartvpn
 * tiger
 * torguard - 05/04/2020
