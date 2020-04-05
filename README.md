@@ -96,5 +96,5 @@ ssh -i insecure_key root@localhost:1022 echo hello world
 #### Use Google DNS servers
 Some have encountered problems with DNS resolving inside the docker container.
 If you have this problem use dockers --dns flag to override the resolv.conf of the container.
-For example use googles dns servers by adding --dns 8.8.8.8 --dns 8.8.4.4 as parameters to the usual run command.
+For example use googles dns servers by adding --dns 8.8.8.8 --dns 8.8.4.4 as parameters to the usual run command .
 
