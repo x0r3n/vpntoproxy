@@ -20,7 +20,6 @@ Now you can connect your application to a proxy `localhost:3128`.
 Build based on
 * [phusion/baseimage-docker](https://github.com/phusion/baseimage-docker)
 
-Docker container which runs OpenVPN client. Can be used as base image. Ex.: [Squid Proxy using OpenVPN](https://github.com/schmas/docker-openvpn-proxy)
 It bundles certificates and configurations for the following VPN providers:
 * Anonine
 * BTGuard
