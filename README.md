@@ -27,7 +27,7 @@ It bundles certificates and configurations for the following VPN providers:
 * froot
 * frostvpn
 * hideme
-* hidemyass
+* hidemyass - 05/04/2020 
 * integrityvpn
 * ipvanish - 05/04/2020
 * ivacy
