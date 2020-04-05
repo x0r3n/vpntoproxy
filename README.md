@@ -41,7 +41,7 @@ It bundles certificates and configurations for the following VPN providers:
 * slickvpn
 * smartvpn
 * tiger
-* torguard
+* torguard - 05/04/2020
 * usenetserver
 * vpnht
 * windscribe
