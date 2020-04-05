@@ -43,7 +43,7 @@ It bundles certificates and configurations for the following VPN providers:
 * tiger
 * torguard - 05/04/2020
 * usenetserver
-* vpnht
+* vpnht - 05/04/2020
 * windscribe
 
 ## Run container from Docker registry
