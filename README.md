@@ -4,16 +4,17 @@ To run the container use this command:
 
 ```
 $ docker run --privileged  -d \
+              -e "LOCAL_NETWORK=192.168.0.0/24" \
               -e "OPENVPN_PROVIDER=PIA" \
               -e "OPENVPN_CONFIG=Netherlands" \
               -e "OPENVPN_USERNAME=user" \
               -e "OPENVPN_PASSWORD=pass" \
               -p 1022:22 \
-              -p 3128:3128 \
+              -p 2000:3128 \
               x0r3n/vpntoproxy
 ```
 
-Now you can connect your application to a proxy `localhost:3128`.
+Now you can connect your application to a proxy `YourServerIP:2000`.
 
 
 ## OpenVPN configuration
@@ -45,6 +46,7 @@ It bundles certificates and configurations for the following VPN providers:
 * usenetserver
 * vpnht - 05/04/2020
 * windscribe
+* cactusvpn - 05/04/2020
 
 ## Run container from Docker registry
 The container is available from the Docker registry and this is the simplest way to get it.
@@ -52,6 +54,7 @@ To run the container use this command:
 
 ```
 $ docker run --privileged  -d \
+              -e "LOCAL_NETWORK=192.168.0.0/24" \
               -e "OPENVPN_PROVIDER=PIA" \
               -e "OPENVPN_CONFIG=Netherlands" \
               -e "OPENVPN_USERNAME=user" \
