@@ -29,13 +29,13 @@ It bundles certificates and configurations for the following VPN providers:
 * HideMe
 * HideMyAss
 * IntegrityVPN
-* IPVanish - UPDATED
+* IPVanish - UPDATED 2020/04/05
 * Ivacy
 * IVPN
 * NordVPN
-* Private Internet Access (PIA) - UPDATED
+* Private Internet Access (PIA) - UPDATED 2020/04/05
 * PrivateVPN
-* PureVPN - UPDATED
+* PureVPN - UPDATED 2020/04/05
 * TigerVPN
 * TorGuard
 * UsenetServerVPN
