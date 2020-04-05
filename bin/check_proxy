@@ -4,7 +4,7 @@ VPN_INTFACE=tun0
 SQUID_CONFIG_FILE=/etc/squid/squid.conf
 
 # IP address of VPN interface
-VPN_INTFACE_IP=$(ifconfig $VPN_INTFACE | awk '{print $2}' | egrep -o '([0-9]+\.){3}[0-9]+')
+VPN_INTFACE_IP=$(/sbin/ifconfig $VPN_INTFACE | awk '{print $2}' | egrep -o '([0-9]+\.){3}[0-9]+')
 
 #VPN interface is up and exit if it isn't
 if [ -z "$VPN_INTFACE_IP" ]
