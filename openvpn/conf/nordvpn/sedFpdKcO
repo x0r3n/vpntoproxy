@@ -1,0 +1,20 @@
+client
+dev tun0
+proto tcp
+remote 185.245.84.245 443
+resolv-retry infinite
+remote-random
+nobind
+tun-mtu 1500
+tun-mtu-extra 32
+mssfix 1450
+persist-key
+persist-tun
+ping 15
+ping-restart 0
+ping-timer-rem
+reneg-sec 0
+comp-lzo no
+
+remote-cert-tls server
+
