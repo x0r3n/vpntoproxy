@@ -57,6 +57,10 @@ for _provider in $providers; do
 
 			# Set all vpn interface to tun0
  			sed -i "s/dev t.*/dev tun0/g" "$configFile"
+                        sed -i "/tun-ipv6/d" "$configFile"
+
+                        # Unix line endings
+                        sed -i 's/\r$//g' "$configFile"
 		done
 
 	echo "Updated all .ovpn files in folder $_provider"
