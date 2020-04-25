@@ -1,3 +1,4 @@
-#/bin/bash
-sed -i '/verb 1/a\
-comp-lzo' **/*.ovpn
+#!/bin/bash
+
+sed -i "s/route.*/#route /g" **/*.ovpn
+
