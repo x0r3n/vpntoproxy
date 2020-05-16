@@ -31,7 +31,7 @@ It bundles certificates and configurations for the following VPN providers:
 * hideme - 05/04/2020
 * hidemyass - 05/04/2020 
 * integrityvpn - 05/04/2020
-* ipvanish - 05/04/2020
+* ipvanish - 16/05/2020
 * ivacy - 05/04/2020
 * ivpn - 05/04/2020
 * newshosting
