@@ -3,8 +3,6 @@
 squid_username="$(echo $SQUID_USER)"
 squid_password="$(echo $SQUID_PASS)"
 
-sleep 10
-
 FILE=/etc/squid/squidusers
 if [ -s "$FILE" ]; then
   exit 0;
