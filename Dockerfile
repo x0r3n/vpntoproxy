@@ -43,6 +43,8 @@ VOLUME /config
 ADD bin/ /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
+RUN sed -i "/^exit.*/i sh '/usr/local/bin/set_proxy_pass.sh'" /etc/rc.local
+
 ADD cron/ /etc/cron.d/
 
 # Add configuration and scripts

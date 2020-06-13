@@ -9,8 +9,9 @@ if [ -s "$FILE" ]; then
 else
 
   sleep 1
-  htpasswd -c -b /etc/squid/squidusers $squid_username $squid_password
+  /usr/bin/htpasswd -c -b /etc/squid/squidusers $squid_username $squid_password
 
   sleep 2
   /usr/sbin/squid -k reconfigure
 fi
+exit 0
