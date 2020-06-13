@@ -80,4 +80,5 @@ RUN chmod +x /etc/squid/squid-*.sh \
     && ln -s /etc/squid/squid-run.sh /etc/service/squid/run \
     && ln -s /etc/squid/squid-finish.sh /etc/service/squid/finish
 
-RUN { crontab -l; crontab -l |  grep -qxF '@reboot sleep 1 && /usr/local/bin/set_proxy_pass.sh' || echo '@reboot sleep 1 && /usr/local/bin/set_proxy_pass.sh';} | crontab -
+RUN ln -s /usr/local/bin/set_proxy_pass.sh /etc/my_init.d/set_proxy_pass.sh \
+    && chmod +x /etc/my_init.d/*
