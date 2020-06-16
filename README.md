@@ -48,6 +48,9 @@ It bundles certificates and configurations for the following VPN providers:
 * vpnht - 05/04/2020
 * windscribe
 * cactusvpn - 05/04/2020
+* VeePN - 06/16/2020
+* vpnac - 06/16/2020
+* boxpn - 06/16/2020
 
 ## Run container from Docker registry
 The container is available from the Docker registry and this is the simplest way to get it.
