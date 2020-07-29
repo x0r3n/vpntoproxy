@@ -37,7 +37,7 @@ RUN /usr/sbin/enable_insecure_key
 EXPOSE 22
 
 # Volumes
-VOLUME /config
+#VOLUME /config
 
 # Adding utils scripts to bin
 ADD bin/ /usr/local/bin/
