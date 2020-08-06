@@ -8,7 +8,8 @@
 # https://github.com/phusion/baseimage-docker/blob/master/Changelog.md
 # for a list of version numbers.
 
-FROM phusion/baseimage:latest
+#FROM phusion/baseimage:latest
+FROM phusion/baseimage:bionic-1.0.0
 
 # Evironment variables
 ENV DEBIAN_FRONTEND=noninteractive \
