@@ -24,7 +24,7 @@ RUN apt-get update \
     && apt-get install -y openvpn inetutils-traceroute inetutils-ping wget apache2-utils curl net-tools nano \
     && curl -L https://github.com/jwilder/dockerize/releases/download/v0.2.0/dockerize-linux-amd64-v0.2.0.tar.gz | tar -C /usr/local/bin -xzv \
     && rm -rfv dockerize-linux-amd64-v0.2.0.tar.gz \
-    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
+    && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
 
 
 # Enabling SSH
@@ -37,7 +37,7 @@ RUN /usr/sbin/enable_insecure_key
 EXPOSE 22
 
 # Volumes
-#VOLUME /config
+VOLUME /config
 
 # Adding utils scripts to bin
 ADD bin/ /usr/local/bin/
