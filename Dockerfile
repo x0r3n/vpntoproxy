@@ -9,7 +9,7 @@
 # for a list of version numbers.
 
 #FROM phusion/baseimage:latest
-FROM phusion/baseimage:bionic-1.0.0
+FROM phusion/baseimage:latest-amd64
 
 # Evironment variables
 ENV DEBIAN_FRONTEND=noninteractive \
