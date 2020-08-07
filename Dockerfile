@@ -44,7 +44,7 @@ VOLUME /config
 ADD system/rc-local.service /etc/systemd/system/
 ADD system/rc.local /etc/
 RUN sed -i "/^exit.*/i sh '/usr/local/bin/set_proxy_pass.sh'" /etc/rc.local
-RUN chmod +x /etc/rc/local
+RUN chmod +x /etc/rc.local
 RUN systemctl enable rc-local \
     && system start rc-local
 
