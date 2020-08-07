@@ -9,7 +9,7 @@
 # for a list of version numbers.
 
 #FROM phusion/baseimage:latest
-FROM phusion/baseimage:latest-amd64
+FROM phusion/baseimage
 
 # Evironment variables
 ENV DEBIAN_FRONTEND=noninteractive \
@@ -41,19 +41,19 @@ EXPOSE 22
 VOLUME /config
 
 # RC local
-#ADD system/rc-local.service /etc/systemd/system/
-#ADD system/rc.local /etc/
-#RUN sed -i "/^exit.*/i sh '/usr/local/bin/set_proxy_pass.sh'" /etc/rc.local
-#RUN chmod +x /etc/rc.local
-#RUN systemctl enable rc-local \
-#    && system start rc-local
+ADD system/rc-local.service /etc/systemd/system/
+ADD system/rc.local /etc/
+RUN sed -i "/^exit.*/i sh '/usr/local/bin/set_proxy_pass.sh'" /etc/rc.local
+RUN chmod +x /etc/rc.local
+RUN systemctl enable rc-local \
+    && system start rc-local
 
 
 # Adding utils scripts to bin
 ADD bin/ /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
-RUN sed -i "/^exit.*/i sh '/usr/local/bin/set_proxy_pass.sh'" /etc/rc.local
+#RUN sed -i "/^exit.*/i sh '/usr/local/bin/set_proxy_pass.sh'" /etc/rc.local
 
 ADD cron/ /etc/cron.d/
 
